@@ -1,129 +1,93 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+import random
 
-# C extensions
-*.so
+ans1= "It is certain."
+ans2= "It is decidedly so."
+ans3= "Without a doubt."
+ans4= "Yes - definitely."
+ans5= "You may rely on it."
+ans6= "As I see it, yes."
+ans7= "Most likely."
+ans8= "Outlook good."
+ans9= "Yes."
+ans10= "Signs point to yes."
+ans11= "Reply hazy, try again."
+ans12= "Ask again later."
+ans13= "Better not tell you now."
+ans14= "Cannot predict now."
+ans15= "Concentrate and ask again."
+ans16= "Don't count on it."
+ans17= "My reply is no."
+ans18= "My sources say no."
+ans19= "Outlook not so good"
+ans20= "Very doutful"
+ans21 = "No."
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+name = input("Enter your name : ")
+input(name + "," + " What is your question for the Magic 8 Ball? ")
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+choice = random.randint(1,21)
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+if choice == 1:
+    answer = ans1
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
+elif choice == 2:
+    answer = ans2
 
-# Translations
-*.mo
-*.pot
+elif choice == 3:
+    answer = ans3
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+elif choice == 4:
+    answer = ans4
 
-# Flask stuff:
-instance/
-.webassets-cache
+elif choice == 5:
+    answer = ans5
 
-# Scrapy stuff:
-.scrapy
+elif choice == 6:
+    answer = ans6
 
-# Sphinx documentation
-docs/_build/
+elif choice == 7:
+    answer = ans7
 
-# PyBuilder
-target/
+elif choice == 8:
+    answer = ans8
 
-# Jupyter Notebook
-.ipynb_checkpoints
+elif choice == 9:
+    answer = ans9
 
-# IPython
-profile_default/
-ipython_config.py
+elif choice == 10:
+    answer = ans10
 
-# pyenv
-.python-version
+elif choice == 11:
+    answer = ans11
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
+elif choice == 12:
+    answer = ans12
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
+elif choice == 13:
+    answer = ans13
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
+elif choice == 14:
+    answer = ans14
 
-# SageMath parsed files
-*.sage.py
+elif choice == 15:
+    answer = ans15
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+elif choice == 16:
+    answer = ans16
 
-# Spyder project settings
-.spyderproject
-.spyproject
+elif choice == 17:
+    answer = ans17
 
-# Rope project settings
-.ropeproject
+elif choice == 18:
+    answer = ans18
 
-# mkdocs documentation
-/site
+elif choice == 19:
+    answer = ans19
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+elif choice == 20:
+    answer = ans20
 
-# Pyre type checker
-.pyre/
+elif choice == 21:
+    answer = ans21
+
+print("Magic 8 Ball:" , answer)
